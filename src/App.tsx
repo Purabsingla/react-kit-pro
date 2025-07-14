@@ -1,13 +1,7 @@
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
+import WelcomePage from "./components/welcome-page";
 
 function App() {
-  return (
-    <div className="flex min-h-svh flex-col items-center justify-center bg-gray-200">
-      <Button variant="destructive">outline</Button>
-      <Progress value={73} className="top-40 w-1/2" />
-    </div>
-  );
+  return <WelcomePage />;
 }
 
 export default App;
