@@ -35,6 +35,6 @@
     "src/global.d.ts",
     "cli/index.ts",
     "cli/tsconfig.json",
-    "dist/cli"
+    "src/dist/cli"
   ]
 }

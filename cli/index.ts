@@ -66,6 +66,36 @@ if (pkg.scripts?.["update-deps"]) {
   console.log(chalk.gray("🔧 Removed update-deps script"));
 }
 
+// Remove CLI bin entry after project setup
+if (pkg.bin) {
+  delete pkg.bin;
+  fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
+}
+
+const cliPath = path.resolve(process.cwd(), "cli");
+if (fs.existsSync(cliPath)) {
+  fs.rmSync(cliPath, { recursive: true, force: true });
+  console.log("🧹 Removed CLI folder");
+}
+
+const tsconfigPath = path.resolve(process.cwd(), "tsconfig.json");
+
+if (fs.existsSync(tsconfigPath)) {
+  const tsconfig = JSON.parse(fs.readFileSync(tsconfigPath, "utf8"));
+  // Filter out the reference to ./cli/tsconfig.json
+  if (Array.isArray(tsconfig.references)) {
+    tsconfig.references = (tsconfig.references as { path: string }[]).filter(
+      (ref) => ref.path !== "./cli/tsconfig.json"
+    );
+  }
+
+  // Write updated tsconfig back
+  fs.writeFileSync(tsconfigPath, JSON.stringify(tsconfig, null, 2) + "\n");
+  console.log(
+    "✅ Removed './cli/tsconfig.json' from references in tsconfig.json"
+  );
+}
+
 // Step 5: Final message
 console.log(chalk.green("\n✅ Setup Complete!"));
 

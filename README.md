@@ -1,6 +1,5 @@
 # ⚡ React Kit Pro
 
-
 A professional, customizable, and modern React + Vite + Tailwind CSS template designed to kickstart your frontend projects. It comes pre-configured with powerful tools and UI components using **shadcn/ui**, **TypeScript**, and more.
 
 > 🚀 Build faster. Maintain better. Deploy with ease.
@@ -48,25 +47,16 @@ react-kit-pro/
 ### 1. Clone the Template
 
 ```bash
-npx degit Purabsingla/react-kit-pro my-app
-cd my-app
+npx react-pro-kit
+# or
+bun x react-pro-kit
 ```
 
-### 2. Install Dependencies
+### 2. Start development server
 
 ```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-```
+cd <project-name>
 
-### 3. Start development server
-
-```bash
 npm run dev
 # or
 yarn dev
@@ -91,17 +81,18 @@ bun x shadcn-ui@latest add button
 ---
 
 ## 🙌 Contributing
+
 Pull requests and suggestions are welcome! If you have ideas to improve this template, feel free to open an issue or PR.
 
 ---
 
 ## 🌐 Author
+
 Purab Singla
 GitHub · LinkedIn (Update your link)
 
 ---
 
 Crafted with care using React, Tailwind & Vite ❤️
-
 
 Let me know if you'd like to include **deployment steps** (e.g. with Vercel or Netlify), or **example components** in the README!
