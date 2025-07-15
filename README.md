@@ -4,6 +4,7 @@
 A professional, customizable, and modern React + Vite + Tailwind CSS template designed to kickstart your frontend projects. It comes pre-configured with powerful tools and UI components using **shadcn/ui**, **TypeScript**, and more.
 
 > 🚀 Build faster. Maintain better. Deploy with ease.
+> 🧱 Works with your favorite package manager: npm, yarn, pnpm, or bun.
 
 ---
 
@@ -57,6 +58,10 @@ cd my-app
 npm install
 # or
 yarn install
+# or
+pnpm install
+# or
+bun install
 ```
 
 ### 3. Start development server
@@ -65,6 +70,10 @@ yarn install
 npm run dev
 # or
 yarn dev
+# or
+pnpm dev
+#or
+bun dev
 ```
 
 ---
@@ -75,6 +84,8 @@ The template comes with shadcn/ui configured out of the box. To generate new com
 
 ```bash
 npx shadcn-ui@latest add button
+# or
+bun x shadcn-ui@latest add button
 ```
 
 ---
