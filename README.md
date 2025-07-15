@@ -1,69 +1,107 @@
-# React + TypeScript + Vite
+# ⚡ React Kit Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+A professional, customizable, and modern React + Vite + Tailwind CSS template designed to kickstart your frontend projects. It comes pre-configured with powerful tools and UI components using **shadcn/ui**, **TypeScript**, and more.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+> 🚀 Build faster. Maintain better. Deploy with ease.
+> 🧱 Works with your favorite package manager: npm, yarn, pnpm, or bun.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- ⚡ **Vite** for lightning-fast builds
+- 🎨 **Tailwind CSS** for utility-first styling
+- 🧩 **shadcn/ui** with Radix UI for accessible components
+- 💡 **TypeScript** support
+- 📁 Clean and scalable folder structure
+- 🧼 Prettier & ESLint pre-configured
+- 🔁 Dark mode support
+- 🔄 Easy-to-extend design system
+- 📦 Minimal dependencies and fast setup
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Folder Structure
+
+```txt
+react-kit-pro/
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Page-level components
+│ ├── lib/ # Utility functions, hooks, and constants
+│ ├── app/ # Main app routing and layout
+│ ├── styles/ # Global styles (if any)
+│ └── main.tsx # Entry point
+├── public/ # Static assets
+├── .eslintrc.cjs
+├── tailwind.config.ts
+├── index.html
+├── vite.config.ts
+└── package.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Getting Started
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone the Template
+
+```bash
+npx degit Purabsingla/react-kit-pro my-app
+cd my-app
 ```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+### 3. Start development server
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+#or
+bun dev
+```
+
+---
+
+## 🧩 UI Components with shadcn/ui
+
+The template comes with shadcn/ui configured out of the box. To generate new components:
+
+```bash
+npx shadcn-ui@latest add button
+# or
+bun x shadcn-ui@latest add button
+```
+
+---
+
+## 🙌 Contributing
+Pull requests and suggestions are welcome! If you have ideas to improve this template, feel free to open an issue or PR.
+
+---
+
+## 🌐 Author
+Purab Singla
+GitHub · LinkedIn (Update your link)
+
+---
+
+Crafted with care using React, Tailwind & Vite ❤️
+
+
+Let me know if you'd like to include **deployment steps** (e.g. with Vercel or Netlify), or **example components** in the README!
