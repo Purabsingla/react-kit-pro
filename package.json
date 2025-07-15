@@ -1,8 +1,25 @@
 {
-  "name": "create-react-pro-kit",
+  "name": "react-pro-kit",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.6",
   "type": "module",
+  "files": [
+    "dist/cli",
+    "src",
+    "public",
+    "components",
+    "lib",
+    "vite.config.ts",
+    "vite.config.js",
+    "vite.config.d.ts",
+    "components.json",
+    "tsconfig.app.json",
+    "tsconfig.node.json",
+    "tsconfig.json",
+    "eslint.config.js",
+    "index.html",
+    ".gitignore"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -11,7 +28,7 @@
     "update-deps": "bun x npm-check-updates -u && bun install"
   },
   "bin": {
-    "create-react-pro-kit": "src/dist/cli/index.js"
+    "react-pro-kit": "src/dist/cli/index.js"
   },
   "dependencies": {
     "@radix-ui/react-progress": "^1.1.7",
