@@ -1,7 +1,7 @@
 {
   "name": "create-react-pro-kit",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -11,7 +11,7 @@
     "update-deps": "bun x npm-check-updates -u && bun install"
   },
   "bin": {
-    "create-react-pro-kit": "src/dist/index.js"
+    "create-react-pro-kit": "src/dist/cli/index.js"
   },
   "dependencies": {
     "@radix-ui/react-progress": "^1.1.7",
