@@ -9,7 +9,7 @@
     "target": "es2022",
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "outDir": "src/dist",
+    "outDir": "public/dist",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,

@@ -20,6 +20,7 @@
     "index.html",
     ".gitignore"
   ],
+  "homepage": "https://github.com/Purabsingla/react-pro-kit",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

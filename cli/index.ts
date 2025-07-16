@@ -72,10 +72,14 @@ if (pkg.bin) {
   fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
 }
 
+if (pkg.files) {
+  delete pkg.files;
+  fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
+}
+
 const cliPath = path.resolve(process.cwd(), "cli");
 if (fs.existsSync(cliPath)) {
   fs.rmSync(cliPath, { recursive: true, force: true });
-  console.log("🧹 Removed CLI folder");
 }
 
 const tsconfigPath = path.resolve(process.cwd(), "tsconfig.json");
@@ -91,9 +95,6 @@ if (fs.existsSync(tsconfigPath)) {
 
   // Write updated tsconfig back
   fs.writeFileSync(tsconfigPath, JSON.stringify(tsconfig, null, 2) + "\n");
-  console.log(
-    "✅ Removed './cli/tsconfig.json' from references in tsconfig.json"
-  );
 }
 
 // Step 5: Final message

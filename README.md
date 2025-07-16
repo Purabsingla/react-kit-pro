@@ -1,4 +1,4 @@
-# ⚡ React Kit Pro
+# ⚡ React Pro Kit
 
 A professional, customizable, and modern React + Vite + Tailwind CSS template designed to kickstart your frontend projects. It comes pre-configured with powerful tools and UI components using **shadcn/ui**, **TypeScript**, and more.
 
@@ -89,7 +89,7 @@ Pull requests and suggestions are welcome! If you have ideas to improve this tem
 ## 🌐 Author
 
 Purab Singla
-GitHub · LinkedIn (Update your link)
+[GitHub](https://github.com/Purabsingla)
 
 ---
 
